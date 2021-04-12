@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "670368037806",
+    "project_id": "suryapro-uts-mobile",
+    "storage_bucket": "suryapro-uts-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670368037806:android:934f576092a2898e2ae63f",
+        "android_client_info": {
+          "package_name": "suryapro.ustmobile.pos_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670368037806-8c8n4mbf79if5ppcjg4lfje4h7b5hj79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBdRm02eid7FC1bRyW29d4outdB3fV-Js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670368037806-8c8n4mbf79if5ppcjg4lfje4h7b5hj79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
