@@ -57,11 +57,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         login.setOnClickListener(new View.OnClickListener() {
-            String getEmail = email.getText().toString();
-            String getPassword = password.getText().toString();
+
 
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                String getEmail = email.getText().toString();
+                String getPassword = password.getText().toString();
                 firebaseAuth.signInWithEmailAndPassword(getEmail, getPassword)
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
