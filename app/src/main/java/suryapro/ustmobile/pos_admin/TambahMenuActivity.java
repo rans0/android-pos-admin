@@ -59,7 +59,7 @@ public class TambahMenuActivity extends AppCompatActivity {
     }
 
     private void seeMenu() {
-        Intent intent = new Intent(this, ListMenuActivity.class);
+        Intent intent = new Intent(this, DaftarMenuActivity.class);
         startActivity(intent);
     }
 
