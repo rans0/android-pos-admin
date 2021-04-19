@@ -1,8 +1,5 @@
 package suryapro.ustmobile.pos_admin;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,26 +7,27 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
     private EditText email;
     private EditText password;
-    private Button login;
     private Button register;
     private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
 
         email = findViewById(R.id.et_username);
         password = findViewById(R.id.et_password);
-        login = findViewById(R.id.btnLogin);
         register = findViewById(R.id.btnRegister);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -37,28 +35,21 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, RegisterActivity.class));
-            }
-        });
-
-        login.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
                 String getEmail = email.getText().toString();
                 String getPassword = password.getText().toString();
-                firebaseAuth.signInWithEmailAndPassword(getEmail, getPassword)
+
+                firebaseAuth.createUserWithEmailAndPassword(getEmail, getPassword)
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
-                                Toast.makeText(MainActivity.this, "Successfully Login, WELCOME!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(MainActivity.this, TambahMenuActivity.class));
+                                Toast.makeText(RegisterActivity.this, "Admin account has been created", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(MainActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         });
             }
