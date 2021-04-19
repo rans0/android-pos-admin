@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:layout_margin="13dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nama_makanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Menu"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/deskripsi_makanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/harga_makanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:padding="8dp" />
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
