@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Posadmin">
-        <activity android:name=".ListMenuActivity"></activity>
+        <activity android:name=".DaftarMenuActivity"></activity>
         <activity
             android:name=".TambahMenuActivity"
             android:parentActivityName=".MainActivity" />

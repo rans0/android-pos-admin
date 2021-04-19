@@ -77,6 +77,7 @@ public class TambahMenuActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
                                 Toast.makeText(TambahMenuActivity.this, "Menu Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(TambahMenuActivity.this, DaftarMenuActivity.class));
                             }
                         }
                     }).addOnFailureListener(new OnFailureListener() {
