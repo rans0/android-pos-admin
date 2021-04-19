@@ -22,7 +22,7 @@ import java.util.UUID;
 public class TambahMenuActivity extends AppCompatActivity {
 
     private EditText namaMakanan, deskripsiMakanan, hargaMakanan;
-    private Button tambahMenu;
+    private Button tambahMenu, lihatMenu;
     private FirebaseFirestore db;
 
     @Override
@@ -34,6 +34,7 @@ public class TambahMenuActivity extends AppCompatActivity {
         deskripsiMakanan = findViewById(R.id.deskripsi);
         hargaMakanan = findViewById(R.id.harga);
         tambahMenu = findViewById(R.id.tambah_menu);
+        lihatMenu = findViewById(R.id.lihatMenu);
 
         db = FirebaseFirestore.getInstance();
 
@@ -48,6 +49,18 @@ public class TambahMenuActivity extends AppCompatActivity {
                 saveToFireStore(id, nama, deskripsi, harga);
             }
         });
+
+        lihatMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seeMenu();
+            }
+        });
+    }
+
+    private void seeMenu() {
+        Intent intent = new Intent(this, ListMenuActivity.class);
+        startActivity(intent);
     }
 
     private void saveToFireStore(String id, String nama, String deskripsi, String harga) {
