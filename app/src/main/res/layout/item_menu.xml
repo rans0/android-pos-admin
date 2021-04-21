@@ -10,38 +10,62 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/nama_makanan"
-            android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="240sp"
             android:layout_height="wrap_content"
-            android:text="Nama Menu"
-            android:textSize="24sp"
-            android:textColor="#000"
-            android:padding="8dp" />
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nama_makanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Menu"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:padding="8dp" />
 
-        <TextView
-            android:id="@+id/deskripsi_makanan"
-            android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/deskripsi_makanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/harga_makanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="142dp"
             android:layout_height="wrap_content"
-            android:text="Deskripsi"
-            android:textSize="18sp"
-            android:textColor="#000"
-            android:padding="8dp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/harga_makanan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Harga"
-            android:textSize="24sp"
-            android:textColor="#000"
-            android:padding="8dp" />
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Edit" />
 
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete" />
 
+        </LinearLayout>
 
     </LinearLayout>
+
+
 
 
 </androidx.cardview.widget.CardView>
