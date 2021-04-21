@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Posadmin">
+        <activity android:name=".DaftarPesananActivity"></activity>
+        <activity android:name=".HomeActivity" />
         <activity android:name=".DaftarMenuActivity" />
         <activity
             android:name=".TambahMenuActivity"

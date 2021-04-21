@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(AuthResult authResult) {
                                 Toast.makeText(MainActivity.this, "Successfully Login, WELCOME!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(MainActivity.this, DaftarMenuActivity.class));
+                                startActivity(new Intent(MainActivity.this, HomeActivity.class));
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {
