@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="suryapro.ustmobile.pos_admin">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -9,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Posadmin">
-        <activity android:name=".DaftarMenuActivity"></activity>
+        <activity android:name=".InvoiceActivity"></activity>
+        <activity android:name=".DaftarPesananActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".DaftarMenuActivity" />
         <activity
             android:name=".TambahMenuActivity"
             android:parentActivityName=".MainActivity" />
