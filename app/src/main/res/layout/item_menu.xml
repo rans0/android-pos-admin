@@ -20,31 +20,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nama Menu"
-                android:textSize="22sp"
-                android:textColor="#000"
-                android:padding="8dp" />
+                android:textSize="18sp"
+                android:textColor="@color/purple_200"
+                android:textStyle="bold"
+                android:padding="5dp" />
 
             <TextView
                 android:id="@+id/deskripsi_makanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Deskripsi"
-                android:textSize="18sp"
+                android:textSize="12sp"
                 android:textColor="#000"
-                android:padding="8dp" />
-
+                android:padding="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Rp. "
+                    android:textColor="#000"
+                    android:paddingLeft="8dp"
+                    />
             <TextView
                 android:id="@+id/harga_makanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Harga"
-                android:textSize="22sp"
+                android:textSize="12sp"
                 android:textColor="#000"
                 android:padding="8dp" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="142dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -53,12 +66,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
+                android:textColor="@color/white"
                 android:text="Edit" />
 
             <Button
                 android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Delete" />
 
         </LinearLayout>
