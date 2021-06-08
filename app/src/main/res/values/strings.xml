@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">pos-admin</string>
+    <string name="app_name">Makuy Admin</string>
     <string name="title_activity_daftar_menu">DaftarMenu</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

@@ -17,7 +17,7 @@
         android:text="Tambah Menu"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp">
         <TextView
@@ -29,14 +29,14 @@
 
         <EditText
             android:id="@+id/nama_makanan"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama Menu" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
@@ -47,14 +47,14 @@
 
         <EditText
             android:id="@+id/deskripsi"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Deskripsi " />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
 
         <EditText
             android:id="@+id/harga"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Harga" />
 
@@ -74,7 +74,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
         <Button
             android:id="@+id/tambah_menu"
             android:layout_width="wrap_content"
