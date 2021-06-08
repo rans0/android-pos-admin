@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
-    private Button btnMenu, btnPesanan;
+    private Button btnMenu, btnPesanan, btnFormInv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class HomeActivity extends AppCompatActivity {
 
         btnMenu = findViewById(R.id.menu);
         btnPesanan = findViewById(R.id.pesanan);
+        btnFormInv = findViewById(R.id.btnFormInv);
 
         btnMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,17 @@ public class HomeActivity extends AppCompatActivity {
                 lihatPesanan();
             }
         });
+
+        btnFormInv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                invoice();
+            }
+        });
+    }
+
+    private void invoice() {
+        startActivity(new Intent(HomeActivity.this, InvoiceActivity.class));
     }
 
     private void lihatMenu() {

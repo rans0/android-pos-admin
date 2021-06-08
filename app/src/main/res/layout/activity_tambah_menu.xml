@@ -94,6 +94,7 @@
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
             android:text="Lihat Menu" />
+
     </LinearLayout>
 
 </LinearLayout>
